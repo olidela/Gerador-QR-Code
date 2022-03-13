@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Gerador QRCode</title>
+</head>
+
+<body>
+    <section id="app-qrcode">
+        <h2>{{title}}</h2>
+        <input id="input" ref="input" v-model="insert">
+        <p> <strong>Link inserido para gerar QRCode: </strong> {{ insert }}</p>
+        <button id="button" v-on:click="generator()">Gerar QRCode</button>
+        <img id="qr-image">
+    </section>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
